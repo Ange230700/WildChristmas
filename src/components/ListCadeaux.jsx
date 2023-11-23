@@ -1,7 +1,6 @@
 import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
-import { set } from "immutable";
 
 function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
   function handleClick(e) {
@@ -14,7 +13,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">Livres et films</h2>
         {arrayCadeaux
-          .filter((cadeau) => cadeau.Category === "Livres et films")
+          .filter((cadeau) => cadeau.Category === "livres")
           .map((cadeau) => {
             return (
               <button
@@ -35,7 +34,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">Cosmétiques</h2>
         {data
-          .filter((cadeau) => cadeau.Category === "cosmetique")
+          .filter((cadeau) => cadeau.Category === "cosmetiques")
           .map((cadeau) => {
             return (
               <button
@@ -98,7 +97,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">Poupée</h2>
         {data
-          .filter((cadeau) => cadeau.Category === "poupee")
+          .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
           .map((cadeau) => {
             return (
               <button
@@ -119,7 +118,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">Jouet</h2>
         {data
-          .filter((cadeau) => cadeau.Category === "jouet")
+          .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
           .map((cadeau) => {
             return (
               <button
@@ -140,7 +139,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">peluche</h2>
         {data
-          .filter((cadeau) => cadeau.Category === "peluche")
+          .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
           .map((cadeau) => {
             return (
               <button
@@ -182,7 +181,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
       <section className="category-section">
         <h2 className="category-title">18 +</h2>
         {data
-          .filter((cadeau) => cadeau.Category === "18 +")
+          .filter((cadeau) => cadeau.Category === "18ans")
           .map((cadeau) => {
             return (
               <button

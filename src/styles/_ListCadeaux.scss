@@ -1,0 +1,26 @@
+.liste_cadeaux {
+    padding: 20px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .category-section {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+ .bloc_cadeaux {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+       button {
+        border: none;
+        background: none;      
+  }  
+}
+
+}
+}
