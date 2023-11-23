@@ -1,3 +1,4 @@
+
 const data = [
   {
     "id": 1,
@@ -9,7 +10,7 @@ const data = [
     "id": 2,
     "Description": "Sapiens: Une brève histoire de l'humanité de Yuval Noah Harari",
     "Category": "Livres et films",
-    "Image": "/sapiens"
+    "Image": "/sapiens.jpg"
   },
   {
     "id": 3,
