@@ -1,3 +1,4 @@
+
 export default function Accueil() {
   return (
     <div className="container-accueil">
@@ -223,8 +224,13 @@ export default function Accueil() {
               />
 
               <button type="button">GO →</button>
+
+            <img src="/traineau.png" />
+
+              <button type="button">GO →</button>
               <img src="/traineau.png" />
             </div>
+
           </div>
         </div>
       </div>

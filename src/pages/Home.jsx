@@ -1,4 +1,13 @@
-export default function Home() {
+import Wish from "../components/Wish";
+import Modal from "../components/Modal";
+// import ListCadeaux from "../components/ListCadeaux";
 
-return (<p>coucou</p>)
+export default function Home() {
+  return (
+    <div>
+      {/* <ListCadeaux /> */}
+      <Wish />
+      <Modal />
+    </div>
+  );
 }

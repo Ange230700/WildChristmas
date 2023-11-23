@@ -1,0 +1,76 @@
+.containerModal {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    background-color: rgba(215, 172, 219, 0.97);
+    border-radius: 2vh;
+    // padding-inline: 0.9vw 0;
+}
+.close {
+	overflow: hidden;
+	position: relative;
+	border: none;
+	padding: 0;
+	width: 2em; height: 2em;
+	border-radius: 50%;
+	background: transparent;
+	color: #1da1f2;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+	
+	&:focus {
+		outline: solid 0 transparent;
+		box-shadow: 0 0 0 2px #8ed0f9
+	}
+	
+	&:hover {
+		background: rgba(29, 161, 142, .1)
+	}
+	
+	&:before, &:after {
+		position: absolute;
+		top: 15%; left: calc(50% - .0625em);
+		width: .125em; height: 70%;
+		border-radius: .125em;
+		transform: rotate(45deg);
+		background: currentcolor;
+		content: ''
+	}
+	
+	&:after { transform: rotate(-45deg); }
+}
+.openModal {
+    animation: forwards appearIn ease 1s;
+  }
+  
+  @keyframes appearIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 200%);
+      top: 100%;
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .closeModal {
+    animation: forwards appearOut ease 1s;
+  }
+  
+  @keyframes appearOut {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, 200%);
+      top: 100%;
+    }
+  }
