@@ -44,7 +44,38 @@
   {
     "id": 25,
     "Description": "Chaussures de course Nike Air Zoom Pegasus",
-    "Category": "Livres et films",
+    "Category": "sports",
+
     "Image": "public/images/sports/nike-air-zoom-pegasus-34-w-chaussures-running-femme.jpg"
+  },
+  {
+    "id": 16,
+    "Description": "Chucky",
+    "Category": "Poupée",
+    "Image": "/chucky"
+  },
+  {
+    "id": 17,
+    "Description": "pat patrouille",
+    "Category": "Jouet",
+    "Image": "/Pat-patrouille"
+  },
+  {
+    "id": 18,
+    "Description": "belle poupée",
+    "Category": "Poupée",
+    "Image": "/poupée-moche"
+  },
+  {
+    "id": 19,
+    "Description": "Sylvanian",
+    "Category": "peluche",
+    "Image": "/Sylvanian"
+  },
+  {
+    "id": 20,
+    "Description": "Yoda",
+    "Category": "Peluche",
+    "Image": "/yoda"
   }
 ]
