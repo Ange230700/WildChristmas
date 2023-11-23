@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import Modal from "../components/Modal"
+import { useState } from "react";
+import Modal from "../components/Modal";
 
 export default function Wish() {
-  const [ isModal, setIsModal] = useState(false)
+  const [isModal, setIsModal] = useState(false);
   function handleModal() {
     if (isModal) {
       setIsModal((current) => !current);
@@ -12,12 +12,12 @@ export default function Wish() {
   }
   return (
     <div>
-      {/* <div className="containerButton"> */}
+      <div className="containerButton">
         <button type="button" className="validButton" onClick={handleModal}>
           Validé
         </button>
-      {/* </div> */}
-      <Modal handleModal={() => handleModal()} isModal={isModal} />
+        <Modal handleModal={() => handleModal()} isModal={isModal} />
+      </div>
     </div>
   );
 }
