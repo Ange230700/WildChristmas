@@ -1,10 +1,11 @@
 .containerModal {
     position: absolute;
+    top: calc((100% - 70%)/2);
+    left: calc((100% - 50%)/2);
     width: 50%;
     height: 70%;
-    background-color: rgba(215, 172, 219, 0.97);
+    background-color: #182449;
     border-radius: 2vh;
-    // padding-inline: 0.9vw 0;
 }
 .close {
 	overflow: hidden;
@@ -42,35 +43,41 @@
 }
 .openModal {
     animation: forwards appearIn ease 1s;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5s ease;
   }
   
-  @keyframes appearIn {
-    from {
-      opacity: 0;
-      transform: translate(-50%, 200%);
-      top: 100%;
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-    }
-  }
+  // @keyframes appearIn {
+  //   from {
+  //     opacity: 0;
+  //     transform: translate(-50%, 200%);
+  //     top: 100%;
+  //   }
+  //   to {
+  //     opacity: 1;
+  //     transform: translate(-50%, -50%);
+  //     top: 50%;
+  //     left: 50%;
+  //   }
+  // }
   .closeModal {
     animation: forwards appearOut ease 1s;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    opacity: 1;
   }
   
-  @keyframes appearOut {
-    from {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-    }
-    to {
-      opacity: 0;
-      transform: translate(-50%, 200%);
-      top: 100%;
-    }
-  }
+  // @keyframes appearOut {
+  //   from {
+  //     opacity: 1;
+  //     transform: translate(-50%, -50%);
+  //     top: 50%;
+  //     left: 50%;
+  //   }
+  //   to {
+  //     opacity: 0;
+  //     transform: translate(-50%, 200%);
+  //     top: 100%;
+  //   }
+  // }
