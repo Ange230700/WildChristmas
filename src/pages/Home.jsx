@@ -10,6 +10,7 @@ export default function Home() {
   console.log(state);
   return (
     <div className="home">
+      <p>{state.texte}</p>
       <div className="list__cadeaux">
         <ListCadeaux
           arrayCadeaux={arrayCadeaux}
