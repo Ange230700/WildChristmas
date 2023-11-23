@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+
 export default function Accueil() {
   const [texte, setTexte] = useState("");
 
@@ -231,7 +233,8 @@ export default function Accueil() {
                 placeholder="Nom, Prenom"
                 onChange={handleChange}
               />
-              <Link to="/Home" state={{ texte }}>
+
+<Link to="/Home" state={{ texte }}>
                 <button type="button">GO →</button>
               </Link>
               <img src="/traineau.png" />
