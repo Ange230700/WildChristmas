@@ -5,6 +5,7 @@ import ListCadeaux from "./components/ListCadeaux.jsx";
 import Cadeau from "./components/Cadeau.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
+import Wishlist from "./components/WishList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +24,14 @@ const router = createBrowserRouter([
     path: "/ListCadeaux",
     element: <ListCadeaux />,
   },
+  {
+    path: "/wishlist",
+    element: <Wishlist />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
