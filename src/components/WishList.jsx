@@ -12,7 +12,6 @@ const Wishlist = () => {
   };
 
   const handleValidation = () => {
-    // Logique de validation..
     console.log("Wishlist validée!", wishlist);
   };
 
