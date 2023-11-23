@@ -12,11 +12,10 @@ console.log(state);
     <div className="container">
       <p>{state.texte}</p>
 
+
     <div>
-      <ListCadeaux />
       <Wish />
       <Modal />
-    </div>
     </div>
   );
 }
