@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Accueil() {
   return (
     <div className="container-accueil">
@@ -219,8 +217,8 @@ export default function Accueil() {
               <input
                 type="text"
                 required
-                minlenght="4"
-                maxlenght="25"
+                minLength="4"
+                maxLength="25"
                 placeholder="Nom, Prenom"
               />
 
