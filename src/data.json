@@ -18,9 +18,33 @@
     "Image": "/circe"
   },
   {
-    "id": 4,
-    "Description": "Le voyage de Chihiro",
+    "id": 21,
+    "Description": "Montre connectée Garmin Forerunner 45",
+    "Category": "Sports",
+    "Image": "public/images/sports/Garmin Forerunner 45.webp"
+  },
+  {
+    "id": 22,
+    "Description": "Ensemble de yoga Liforme",
+    "Category": "Sports",
+    "Image": "public/images/sports/Ensemble de yoga Liforme.jpg"
+  },
+  {
+    "id": 23,
+    "Description": "Casque de réalité virtuelle Meta Quest 2",
+    "Category": "Sports",
+    "Image": "public/images/sports/casque-de-realite-virtuelle-meta-quest-quest-2.webp"
+  },
+  {
+    "id": 24,
+    "Description": "Vélo d'appartement pliable Ultrasport F-Bike",
+    "Category": "Sports",
+    "Image": "public/images/sports/ultrasport-f-bike-200b-velo-d-appartement-pliant-a.webp"
+  },
+  {
+    "id": 25,
+    "Description": "Chaussures de course Nike Air Zoom Pegasus",
     "Category": "Livres et films",
-    "Image": "/chihiro"
+    "Image": "public/images/sports/nike-air-zoom-pegasus-34-w-chaussures-running-femme.jpg"
   }
 ]
