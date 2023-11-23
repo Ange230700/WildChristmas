@@ -113,5 +113,35 @@
     "Description": "Lampe de bureau LED avec chargeur sans fil",
     "Category": "electronique",
     "Image": "/public/images/electronique/lampe-de-table-licorne.png"
+  },
+  {
+    "id": 26,
+    "Description": "Vaginette - Homme",
+    "Category": "18 +",
+    "Image": ""
+  },
+  {
+    "id": 27,
+    "Description": "Sex Toys (Bad Dragon) - Femme",
+    "Category": "18 +",
+    "Image": ""
+  },
+  {
+    "id": 28,
+    "Description": "Poupée Gonflabe - Homme",
+    "Category": "18 +",
+    "Image": ""
+  },
+  {
+    "id": 29,
+    "Description": "Poupée Gonflabe - Femme",
+    "Category": "18 +",
+    "Image": ""
+  },
+  {
+    "id": 30,
+    "Description": "Lingerie - Femme",
+    "Category": "18 +",
+    "Image": ""
   }
 ]
