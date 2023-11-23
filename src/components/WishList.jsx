@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Cadeau from "./Cadeau.jsx";
+import Cadeau from "./Cadeau";
 import temporaryArray from "../services/temporaryArray.js";
 
 const Wishlist = () => {
