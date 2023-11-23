@@ -1,6 +1,12 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Accueil() {
+  const [texte, setTexte] = useState("");
+
+  const handleChange = (e) => {
+    setTexte(e.target.value);
+  };
+
   return (
     <div className="container-accueil">
       <div className="neige-presentation">
@@ -206,6 +212,7 @@ export default function Accueil() {
           <div className="snow"></div>
           <div className="snow"></div>
         </div>
+
         <div className="presentation">
           <div className="presentation-Input">
             <h1>
@@ -219,19 +226,22 @@ export default function Accueil() {
               <input
                 type="text"
                 required
-                minlenght="4"
-                maxlenght="25"
+                minLength="4"
+                maxLength="25"
                 placeholder="Nom, Prenom"
+                onChange={handleChange}
               />
-
-              <button type="button">GO →</button>
+              <Link to="/Home" state={{ texte }}>
+                <button type="button">GO →</button>
+              </Link>
               <img src="/traineau.png" />
             </div>
           </div>
         </div>
-      </div>
-      <div className="Papa-noel">
-        <img src="/Papa-Noel.png" />
+
+        <div className="Papa-noel">
+          <img src="/Papa-Noel.png" />
+        </div>
       </div>
     </div>
   );
