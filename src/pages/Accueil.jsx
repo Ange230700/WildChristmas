@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Accueil() {
   return (
     <div className="container-accueil">
@@ -215,7 +213,7 @@ export default function Accueil() {
             plus démunis, incarnant un phare d'espoir pour la communauté
           </p>
           <div className="Input-button-logo">
-            <input type="text" required minlenght="4" maxlenght="25" />
+            <input type="text" required minLength="4" maxLength="25" />
 
             <button type="button">GO →</button>
             <img src="/traineau.png" />

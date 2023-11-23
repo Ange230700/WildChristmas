@@ -1,4 +1,4 @@
-export function data () {
+export default function data () {
   [
   {
     "id": 1,
