@@ -1,4 +1,4 @@
-export default function Cadeau({ id, Description, Category, Image }) {
+export default function Cadeau({ Description, Category, Image }) {
   return (
     <>
       <div className="item">
