@@ -1,9 +1,11 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
-import ListCadeaux from "./components/ListCadeaux.jsx";
+// import Accueil from "./pages/Accueil.jsx";
+// import Root from "./components/Root.jsx";
 import ReactDOM from "react-dom/client";
-import Cadeau from "./components/cadeau.jsx";
+import Cadeau from "./components/Cadeau.jsx";
+import Home from "./pages/Home.jsx";
+import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +13,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/ListCadeaux",
-    element: <ListCadeaux />,
+    path: "/Home",
+    element: <Home />,
   },
   {
     path: "/Cadeau",
