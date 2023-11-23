@@ -2,6 +2,7 @@
 import "./styles/index.scss";
 import Accueil from "./pages/Accueil";
 function App() {
+
   return (
     <>
       <Accueil />

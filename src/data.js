@@ -1,7 +1,4 @@
-
-export default function data () {
-  [
-
+const data = [
   {
     "id": 1,
     "Description": "Coffret collector Harry Potter",
