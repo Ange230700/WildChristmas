@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import ListCadeaux from "./components/ListCadeaux.jsx";
 import ReactDOM from "react-dom/client";
+import Wishlist from "./components/WishList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path: "/ListCadeaux",
     element: <ListCadeaux />,
   },
+  {
+    path: "/wishlist",
+    element: <Wishlist />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,5 +25,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
