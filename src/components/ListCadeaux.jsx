@@ -9,11 +9,11 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
   }
 
   return (
-    <div className="list-cadeaux">
+    <div className="liste_cadeaux">
       <section className="category-section">
         <h2 className="category-title">Livres et films</h2>
         <div className="bloc_cadeaux">
-          {arrayCadeaux
+          {data
             .filter((cadeau) => cadeau.Category === "livres")
             .map((cadeau) => {
               return (
