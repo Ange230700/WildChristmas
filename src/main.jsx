@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import ListCadeaux from "./components/ListCadeaux.jsx";
 import ReactDOM from "react-dom/client";
+import Cadeau from "./components/cadeau.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,11 @@ const router = createBrowserRouter([
     path: "/ListCadeaux",
     element: <ListCadeaux />,
   },
+  {
+    path: "/Cadeau",
+    element: <Cadeau />,
+  },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
