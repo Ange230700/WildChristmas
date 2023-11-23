@@ -1,3 +1,5 @@
+import data from "../data.js";
+
 export default function Cadeau() {
   return (
     <div>
@@ -11,4 +13,3 @@ export default function Cadeau() {
     </div>
   );
 }
-

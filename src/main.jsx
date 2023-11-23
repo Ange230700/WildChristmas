@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import App from "./App.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import ListCadeaux from "./components/ListCadeaux.jsx";
+// import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <ListCadeaux />,
     children: [
       {
         path: "/Home",
