@@ -1,15 +1,14 @@
+import { useState } from "react";
 import "./styles/index.scss";
-import Accueil from './pages/Accueil';
-
+import Accueil from "./pages/Accueil";
+import "./styles/index.scss";
 
 function App() {
- 
-
   return (
     <>
-    <Accueil />
+      <Accueil />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
