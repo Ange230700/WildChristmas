@@ -58,5 +58,11 @@
     "Description": "Maillot de bain hamburger",
     "Category": "mode_accessoires",
     "Image": "/maillot_burger.jpg"
+  },
+  {
+    "id": 31,
+    "Description": "Pantoufles",
+    "Category": "mode_accessoires",
+    "Image": "/pantoufles.jfif"
   }
 ]
