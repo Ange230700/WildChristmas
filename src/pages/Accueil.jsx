@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Accueil() {
   return (
     <div className="container-accueil">
@@ -227,3 +228,4 @@ export default function Accueil() {
     </div>
   );
 }
+
