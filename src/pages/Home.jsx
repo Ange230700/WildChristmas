@@ -5,7 +5,6 @@ import Modal from "../components/Modal";
 export default function Home() {
   return (
     <div>
-      {/* <ListCadeaux /> */}
       <Wish />
       <Modal />
     </div>
