@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Accueil() {
   return (
@@ -217,7 +218,9 @@ export default function Accueil() {
           <div className="Input-button-logo">
             <input type="text" required minlenght="4" maxlenght="25" />
 
-            <button type="button">GO →</button>
+            <NavLink to={"Home"}>
+              <button type="button">GO →</button>
+            </NavLink>
             <img src="/traineau.png" />
           </div>
         </div>
