@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
 import Root from "./components/Root.jsx";
-import ListCadeaux from "./components/ListCadeaux.jsx";
+import Home from "./pages/Home.jsx";
 
 
 function main() {
@@ -12,11 +12,11 @@ function main() {
       children: [
         {
           index: true,
-          elment: <Accueil />,
+          element: <Accueil />,
         },
         {
-          path: "/ListCadeaux",
-          element: <ListCadeaux />,
+          path: "/Home",
+          element: <Home />,
         },
       ],
     },
