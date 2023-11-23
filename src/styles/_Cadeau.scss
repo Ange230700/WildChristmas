@@ -2,18 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
-  background-color: #EBEBF2;
+  width: 13vw;
+  background-color: #ffffff;
   border-radius: 5px;
   gap: 10px;
   padding: 20px 0;
+  transition: transform .2s ease-in-out;
+
 
   .imageBloc {
     width: 90%;
 
     img {
       width: 100%;
-      height: 250px;
+      height: 150px;
       object-fit: cover;
       object-position: center;
     }
@@ -24,3 +26,9 @@
     justify-content: start;
   }
 }
+
+.item:hover {
+    transform: scale(105%); 
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.5);
+
+  }
