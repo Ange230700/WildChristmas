@@ -22,5 +22,10 @@
     "Description": "Le voyage de Chihiro",
     "Category": "Livres et films",
     "Image": "/chihiro"
+  },
+  {
+    "id": 11,
+    "Description": "Enceinte Bluetooth JBL Charge 4",
+    "Category": "électronique"
   }
 ]
