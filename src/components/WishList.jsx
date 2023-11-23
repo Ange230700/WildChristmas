@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import ListCadeaux from "./ListCadeaux.jsx";
+import Cadeau from "./Cadeau.jsx";
 import temporaryArray from "../services/temporaryArray.js";
 
-const Wishlist = ({ id, Description, Category, Image }) => {
+const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
 
-  function handleClick() {
-    temporaryArray.remove({ id, Description, Category, Image });
-  }
+  const handleClick = (cadeau) => {
+    const updatedArray = temporaryArray.filter((item) => item.id !== cadeau.id);
+
+    setWishlist(updatedArray);
+  };
 
   const handleValidation = () => {
     // Logique de validation..
@@ -18,23 +20,19 @@ const Wishlist = ({ id, Description, Category, Image }) => {
     <>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
-        {temporaryArray.map((cadeau) => {
-          return (
-            <button
-              key={cadeau.id}
-              className="cadeau-container"
-              onClick={handleClick()}
-            >
-              <Cadeau
-                id={cadeau.id}
-                Description={cadeau.Description}
-                Category={cadeau.Category}
-                Image={cadeau.Image}
-                Onclick={handleClick}
-              />
+        {temporaryArray.map((cadeau) => (
+          <div key={cadeau.id} className="cadeau-container">
+            <Cadeau
+              id={cadeau.id}
+              Description={cadeau.Description}
+              Category={cadeau.Category}
+              Image={cadeau.Image}
+            />
+            <button onClick={() => handleClick(cadeau)}>
+              Retirer de la Wishlist
             </button>
-          );
-        })}
+          </div>
+        ))}
         <button className="bouton-valider" onClick={handleValidation}>
           Valider
         </button>

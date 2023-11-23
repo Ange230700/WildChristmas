@@ -6,6 +6,7 @@ import ReactDOM from "react-dom/client";
 import Cadeau from "./components/Cadeau.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
+import Wishlist from "./components/WishList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/Cadeau",
     element: <Cadeau />,
+  },
+  {
+    path: "/wishlist",
+    element: <Wishlist />,
   },
 ]);
 
