@@ -1,20 +1,19 @@
 import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
+import { set } from "immutable";
 
-export const temporaryArray = [];
-
-function ListCadeaux({ id, Description, Category, Image }) {
+function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
   function handleClick(e) {
-    temporaryArray.push(e);
-    console.log(temporaryArray);
+    console.log(typeof setArrayCadeaux);
+    setArrayCadeaux([...arrayCadeaux, e]);
   }
 
   return (
     <>
       <section className="category-section">
         <h2 className="category-title">Livres et films</h2>
-        {data
+        {arrayCadeaux
           .filter((cadeau) => cadeau.Category === "Livres et films")
           .map((cadeau) => {
             return (
@@ -210,6 +209,15 @@ ListCadeaux.propTypes = {
   Description: PropTypes.string,
   Category: PropTypes.string,
   Image: PropTypes.string,
+  arrayCadeaux: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      Description: PropTypes.string.isRequired,
+      Category: PropTypes.string.isRequired,
+      Image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  setArrayCadeaux: PropTypes.func,
 };
 
 export default ListCadeaux;
