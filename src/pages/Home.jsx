@@ -13,7 +13,6 @@ console.log(state);
       <p>{state.texte}</p>
 
     <div>
-      {/* <ListCadeaux /> */}
       <Wish />
       <Modal />
     </div>
