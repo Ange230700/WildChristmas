@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Cadeau from "./Cadeau";
 import Modal from "./Modal";
 
-const Wishlist = ({ arrayCadeaux }) => {
+const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
   const [isModal, setIsModal] = useState(false);
   function handleModal() {
     if (isModal) {
@@ -13,20 +13,30 @@ const Wishlist = ({ arrayCadeaux }) => {
     }
   }
 
+  function handleClick(cadeau) {
+    console.log(cadeau);
+    console.log(arrayCadeaux);
+    const updatedArray = arrayCadeaux.filter(
+      (cadeauInArray) => cadeauInArray.id !== cadeau.id
+    );
+    setArrayCadeaux(updatedArray);
+  }
+
   return (
     <>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
         {arrayCadeaux.map((cadeau) => (
-          <div key={cadeau.id} className="cadeau-container">
-            <Cadeau
-              id={cadeau.id}
-              Description={cadeau.Description}
-              Category={cadeau.Category}
-              Image={cadeau.Image}
-            />
-            <button>Retirer de la Wishlist</button>
-          </div>
+          <button key={cadeau.id} onClick={() => handleClick(cadeau)}>
+            <div className="cadeau-container">
+              <Cadeau
+                id={cadeau.id}
+                Description={cadeau.Description}
+                Category={cadeau.Category}
+                Image={cadeau.Image}
+              />
+            </div>
+          </button>
         ))}
         <div className="containerButton">
           <button type="button" className="validButton" onClick={handleModal}>
@@ -48,6 +58,7 @@ Wishlist.propTypes = {
       Image: PropTypes.string.isRequired,
     })
   ).isRequired,
+  setArrayCadeaux: PropTypes.func,
 };
 
 export default Wishlist;
