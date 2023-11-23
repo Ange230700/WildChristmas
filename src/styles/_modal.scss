@@ -1,0 +1,42 @@
+.containerModal {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(63, 64, 123, 0.97);
+    border-radius: 2vh;
+    padding-inline: 0.9vw 0;
+}
+.openModal {
+    animation: forwards appearIn ease 1s;
+  }
+  
+  @keyframes appearIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 200%);
+      top: 100%;
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .closeModal {
+    animation: forwards appearOut ease 1s;
+  }
+  
+  @keyframes appearOut {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, 200%);
+      top: 100%;
+    }
+  }
