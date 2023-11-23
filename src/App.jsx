@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import "./styles/Index.scss";
 
 function App() {
@@ -6,6 +5,7 @@ function App() {
 
   return (
     <>
+
     </>
   )
 }
