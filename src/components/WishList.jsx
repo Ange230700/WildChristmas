@@ -1,9 +1,17 @@
-// import { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import Cadeau from "./Cadeau";
-// import temporaryArray from "../services/temporaryArray.js";
+import Modal from "./Modal";
 
 const Wishlist = ({ arrayCadeaux }) => {
+  const [isModal, setIsModal] = useState(false);
+  function handleModal() {
+    if (isModal) {
+      setIsModal((current) => !current);
+    } else {
+      setIsModal((current) => !current);
+    }
+  }
 
   return (
     <>
@@ -17,14 +25,15 @@ const Wishlist = ({ arrayCadeaux }) => {
               Category={cadeau.Category}
               Image={cadeau.Image}
             />
-            <button>
-              Retirer de la Wishlist
-            </button>
+            <button>Retirer de la Wishlist</button>
           </div>
         ))}
-        <button className="bouton-valider">
-          Valider
-        </button>
+        <div className="containerButton">
+          <button type="button" className="validButton" onClick={handleModal}>
+            Validé
+          </button>
+          <Modal handleModal={() => handleModal()} isModal={isModal} />
+        </div>
       </div>
     </>
   );

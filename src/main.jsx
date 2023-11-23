@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ListCadeaux from "./components/ListCadeaux.jsx";
-import Cadeau from "./components/Cadeau.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
 import WishList from "./components/WishList.jsx";
+import Cadeau from "./components/Cadeau.jsx";
+import ListCadeaux from "./components/ListCadeaux.jsx";
 
 const propsToPass = {
   arrayCadeaux: [],
