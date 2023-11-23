@@ -17,5 +17,6 @@ console.log(state);
       <Wish />
       <Modal />
     </div>
+    </div>
   );
 }
