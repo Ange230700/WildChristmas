@@ -18,7 +18,10 @@ export default function Home() {
         />
       </div>
       <div className="wishlist">
-        <WishList arrayCadeaux={arrayCadeaux} />
+        <WishList
+          arrayCadeaux={arrayCadeaux}
+          setArrayCadeaux={setArrayCadeaux}
+        />
       </div>
       <Modal />
     </div>
