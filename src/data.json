@@ -3,7 +3,7 @@
     "id": 1,
     "Description": "Coffret collector Harry Potter",
     "Category": "Livres et films",
-    "Image": "/harry_potter"
+    "Image": "/harry_potter.jpg"
   },
   {
     "id": 2,
@@ -15,12 +15,48 @@
     "id": 3,
     "Description": "Circe de Madeline Miller",
     "Category": "Livres et films",
-    "Image": "/circe"
+    "Image": "/circe.jpg"
   },
   {
     "id": 4,
     "Description": "Le voyage de Chihiro",
     "Category": "Livres et films",
-    "Image": "/chihiro"
+    "Image": "/chihiro.jpg"
+  },
+  {
+    "id": 5,
+    "Description": "Coffret Chanel n°5",
+    "Category": "Cosmétiques",
+    "Image": "/chanel.jpg"
+  },
+  {
+    "id": 6,
+    "Description": "Coffret maquillage Urban Decay",
+    "Category": "Cosmétiques",
+    "Image": "/urban_decay.jpg"
+  },
+  {
+    "id": 7,
+    "Description": "Tondeuse à barbe",
+    "Category": "Cosmétiques",
+    "Image": "/tondeuse.jpg"
+  },
+  {
+    "id": 8,
+    "Description": "Coffret pour homme Clinique",
+    "Category": "Cosmétiques",
+    "Image": "/clinique.jpg"
+  },
+  {
+    "id": 9,
+    "Description": "Maillot de bain USA",
+    "Category": "mode_accessoires",
+    "Image": "/maillot_usa.jpg"
+  },
+  {
+    "id": 10,
+    "Description": "Maillot de bain hamburger",
+    "Category": "mode_accessoires",
+    "Image": "/maillot_burger.jpg"
   }
 ]
