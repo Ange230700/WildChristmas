@@ -1,11 +1,11 @@
 export default function Cadeau() {
   return (
-    <div>
+    <div className="item">
       <div className="imageBloc">
-        <img src={data.image} />
+        <img src="public/images/mode_accessoires/pantoufles.webp" />
       </div>
       <div className="description">
-        <p>{data.description}</p>
+        <p>Pantoufles</p>
       </div>
     </div>
   );
