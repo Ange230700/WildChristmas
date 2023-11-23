@@ -1,4 +1,5 @@
-[
+export default function data () {
+  [
   {
     "id": 1,
     "Description": "Coffret collector Harry Potter",
@@ -187,3 +188,4 @@
     "Image": "/pantoufles.jfif"
   }
 ]
+}

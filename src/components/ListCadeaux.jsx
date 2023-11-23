@@ -1,7 +1,8 @@
-import React from 'react'
-
+import data from "../data"
+import Cadeau from "./cadeau"
 export default function ListCadeaux() {
+
   return (
-    <div>ListCadeaux</div>
+    <div><Cadeau data={data}/></div>
   )
 }
