@@ -12,173 +12,200 @@ function ListCadeaux({ id, Description, Category, Image }) {
     <>
       <section className="category-section">
         <h2 className="category-title">Livres et films</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "Livres et films")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "Livres et films")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Cosmétiques</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "cosmetique")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "cosmetique")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Mode et accessoires</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "mode_accessoires")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "mode_accessoires")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Electronique</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "electronique")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "electronique")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Poupée</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "poupee")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "poupee")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Jouet</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "jouet")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "jouet")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">peluche</h2>
-        <button className="cadeau-container">
-          {data
-            .filter((cadeau) => cadeau.Category === "peluche")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "peluche")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">Sports</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "sports")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "sports")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                   Onclick={handleClick}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
       <section className="category-section">
         <h2 className="category-title">18 +</h2>
-        <button className="cadeau-container" onClick={handleClick()}>
-          {data
-            .filter((cadeau) => cadeau.Category === "18 +")
-            .map((cadeau) => {
-              return (
+        {data
+          .filter((cadeau) => cadeau.Category === "18 +")
+          .map((cadeau) => {
+            return (
+              <button
+                key={cadeau.id}
+                className="cadeau-container"
+                onClick={handleClick()}
+              >
                 <Cadeau
-                  key={cadeau.id}
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
                 />
-              );
-            })}
-        </button>
+              </button>
+            );
+          })}
       </section>
     </>
   );
