@@ -1,7 +1,12 @@
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
 import Root from "./components/Root.jsx";
 import ListCadeaux from "./components/ListCadeaux.jsx";
+
 
 
 function main() {
