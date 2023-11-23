@@ -1,6 +1,6 @@
-import data from "../data.js";
+import PropTypes from "prop-types";
 
-export default function Cadeau({ id, Description, Category, Image }) {
+export default function Cadeau({ Description, Category, Image }) {
   return (
     <>
       <div className="item">
@@ -14,3 +14,10 @@ export default function Cadeau({ id, Description, Category, Image }) {
     </>
   );
 }
+
+Cadeau.propTypes = {
+  id: PropTypes.number,
+  Description: PropTypes.string,
+  Category: PropTypes.string,
+  Image: PropTypes.string,
+};

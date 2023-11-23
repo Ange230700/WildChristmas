@@ -9,7 +9,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
   }
 
   return (
-    <>
+    <div className="list-cadeaux">
       <section className="category-section">
         <h2 className="category-title">Livres et films</h2>
         {arrayCadeaux
@@ -95,49 +95,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
           })}
       </section>
       <section className="category-section">
-        <h2 className="category-title">Poupée</h2>
-        {data
-          .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
-          .map((cadeau) => {
-            return (
-              <button
-                key={cadeau.id}
-                className="cadeau-container"
-                onClick={() => handleClick(cadeau)}
-              >
-                <Cadeau
-                  id={cadeau.id}
-                  Description={cadeau.Description}
-                  Category={cadeau.Category}
-                  Image={cadeau.Image}
-                />
-              </button>
-            );
-          })}
-      </section>
-      <section className="category-section">
-        <h2 className="category-title">Jouet</h2>
-        {data
-          .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
-          .map((cadeau) => {
-            return (
-              <button
-                key={cadeau.id}
-                className="cadeau-container"
-                onClick={() => handleClick(cadeau)}
-              >
-                <Cadeau
-                  id={cadeau.id}
-                  Description={cadeau.Description}
-                  Category={cadeau.Category}
-                  Image={cadeau.Image}
-                />
-              </button>
-            );
-          })}
-      </section>
-      <section className="category-section">
-        <h2 className="category-title">peluche</h2>
+        <h2 className="category-title">Poupée, jouet et peluche</h2>
         {data
           .filter((cadeau) => cadeau.Category === "poupée_jouet_peluche")
           .map((cadeau) => {
@@ -199,7 +157,7 @@ function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
             );
           })}
       </section>
-    </>
+    </div>
   );
 }
 

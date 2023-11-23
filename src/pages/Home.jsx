@@ -6,12 +6,16 @@ export default function Home() {
   const [arrayCadeaux, setArrayCadeaux] = useState([]);
 
   return (
-    <>
-      <ListCadeaux
-        arrayCadeaux={arrayCadeaux}
-        setArrayCadeaux={setArrayCadeaux}
-      />
-      <WishList arrayCadeaux={arrayCadeaux} />
-    </>
+    <div className="home">
+      <div className="list__cadeaux">
+        <ListCadeaux
+          arrayCadeaux={arrayCadeaux}
+          setArrayCadeaux={setArrayCadeaux}
+        />
+      </div>
+      <div className="wishlist">
+        <WishList arrayCadeaux={arrayCadeaux} />
+      </div>
+    </div>
   );
 }
