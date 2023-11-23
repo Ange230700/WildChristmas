@@ -13,6 +13,10 @@ const Wishlist = ({ arrayCadeaux }) => {
     }
   }
 
+  function handleClick() {
+    
+  }
+
   return (
     <>
       <div className="wishlist-container">
