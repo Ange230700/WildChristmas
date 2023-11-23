@@ -22,5 +22,35 @@
     "Description": "Le voyage de Chihiro",
     "Category": "Livres et films",
     "Image": "/chihiro"
+  },
+  {
+    "id": 16,
+    "Description": "Chucky",
+    "Category": "Poupée",
+    "Image": "/chucky"
+  },
+  {
+    "id": 17,
+    "Description": "pat patrouille",
+    "Category": "Jouet",
+    "Image": "/Pat-patrouille"
+  },
+  {
+    "id": 18,
+    "Description": "belle poupée",
+    "Category": "Poupée",
+    "Image": "/poupée-moche"
+  },
+  {
+    "id": 19,
+    "Description": "Sylvanian",
+    "Category": "peluche",
+    "Image": "/Sylvanian"
+  },
+  {
+    "id": 20,
+    "Description": "Yoda",
+    "Category": "Peluche",
+    "Image": "/yoda"
   }
 ]
