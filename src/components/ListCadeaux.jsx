@@ -1,11 +1,13 @@
 import Cadeau from "./Cadeau";
 import data from "../data.js";
-import temporaryArray from "../services/temporaryArray.js";
 import PropTypes from "prop-types";
 
+export const temporaryArray = [];
+
 function ListCadeaux({ id, Description, Category, Image }) {
-  function handleClick() {
-    temporaryArray.push({ id, Description, Category, Image });
+  function handleClick(e) {
+    temporaryArray.push(e);
+    console.log(temporaryArray);
   }
 
   return (
@@ -19,14 +21,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -41,14 +42,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -63,14 +63,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -85,14 +84,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -107,14 +105,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -129,14 +126,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -151,14 +147,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -173,14 +168,13 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
                   Image={cadeau.Image}
-                  Onclick={handleClick}
                 />
               </button>
             );
@@ -195,7 +189,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
               <button
                 key={cadeau.id}
                 className="cadeau-container"
-                onClick={handleClick()}
+                onClick={() => handleClick(cadeau)}
               >
                 <Cadeau
                   id={cadeau.id}
