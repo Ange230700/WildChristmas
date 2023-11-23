@@ -1,10 +1,17 @@
-import "./styles/Index.scss";
+import { useState } from 'react'
+import "./styles/index.scss";
+import Accueil from './pages/Accueil';
+
 
 function App() {
  
 
   return (
     <>
+
+    <Accueil />
+
+
 
     </>
   )
