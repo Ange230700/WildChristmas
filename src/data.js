@@ -8,21 +8,21 @@ const data = [
   },
   {
     "id": 2,
-    "Description": "Sapiens: Une brève histoire de l'humanité de Yuval Noah Harari",
+    "Description": "Sapiens de Yuval Noah Harari",
     "Category": "livres",
-    "Image": "/sapiens.jpg"
+    "Image": "/sapiens.webp"
   },
   {
     "id": 3,
     "Description": "Circe de Madeline Miller",
     "Category": "livres",
-    "Image": "/circe.jpg"
+    "Image": "/circe.png"
   },
   {
     "id": 4,
     "Description": "Le voyage de Chihiro",
     "Category": "livres",
-    "Image": "/chihiro.jpg"
+    "Image": "/chihiro.png"
   },
   {
     "id": 5,
@@ -104,7 +104,7 @@ const data = [
   },
   {
     "id": 18,
-    "Description": "belle poupée",
+    "Description": "Belle poupée",
     "Category": "poupée_jouet_peluche",
     "Image": "/poupée-moche.jpeg"
   },
