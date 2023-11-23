@@ -1,4 +1,3 @@
 export default function Home() {
-
-return (<p>coucou</p>)
+  return <p>coucou</p>;
 }

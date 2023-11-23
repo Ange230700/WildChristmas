@@ -1,16 +1,21 @@
-// import react, { useState } from "react";
-// import productsData from "..data.json";
+import React, { useState, useEffect } from "react";
+import productsData from "../data.js";
 
-// const Wishlist = () => {
-//   const [wishlist, setWishlist] = useState([]);
+const Wishlist = () => {
+  const [wishlist, setWishlist] = useState([]);
 
-//   useEffect(() => {
-//     setWishlistProducts(productsData);
-//   }, []);
-// };
+  useEffect(() => {
+    setProducts([...productsData]);
+  }, []);
+};
 
-// const removeProduct = (productId) => {
-//   setWishlistProducts;
-// };
+return (
+  <div>
+    <h2>Ma Wishlist</h2>
+    {products.map((product) => (
+      <WishlistProduct key={product.id} product={product} />
+    ))}
+  </div>
+);
 
-// export default Wishlist;
+export default Wishlist;
