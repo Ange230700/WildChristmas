@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Cadeau from "./Cadeau";
-import temporaryArray from "../services/temporaryArray.js";
+import ListCadeaux, { temporaryArray } from "./ListCadeaux";
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
 
   const handleClick = (cadeau) => {
     const updatedArray = temporaryArray.filter((item) => item.id !== cadeau.id);
-
     setWishlist(updatedArray);
   };
 
