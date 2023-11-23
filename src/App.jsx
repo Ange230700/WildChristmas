@@ -4,6 +4,7 @@ import Accueil from "./pages/Accueil";
 import "./styles/index.scss";
 
 function App() {
+
   return (
     <>
       <Accueil />

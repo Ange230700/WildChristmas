@@ -1,4 +1,7 @@
-export default function Home() {
+import ListCadeaux from "../components/ListCadeaux";
+import WishList from "../components/WishList";
 
-return (<p>coucou</p>)
+export default function Home() {
+  const [arrayCadeaux, setArrayCadeaux] = useState([]);
+  return <></>;
 }
