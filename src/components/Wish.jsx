@@ -1,5 +1,7 @@
+
 import { useState } from "react";
 import Modal from "../components/Modal";
+
 
 export default function Wish() {
   const [isModal, setIsModal] = useState(false);

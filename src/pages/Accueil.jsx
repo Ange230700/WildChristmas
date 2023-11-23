@@ -1,5 +1,3 @@
-// import React from "react";
-import { NavLink } from "react-router-dom";
 
 export default function Accueil() {
   return (
@@ -208,20 +206,31 @@ export default function Accueil() {
           <div className="snow"></div>
         </div>
         <div className="presentation">
-          <h1>
-            Association <br /> <span>Wild Christmas</span>
-          </h1>
-          <p>
-            L'association "Wild Christmas" offre des cadeaux réconfortants aux
-            plus démunis, incarnant un phare d'espoir pour la communauté
-          </p>
-          <div className="Input-button-logo">
-            <input type="text" required minlenght="4" maxlenght="25" />
+          <div className="presentation-Input">
+            <h1>
+              ASSOCIATION <br /> <span>Wild Christmas</span>
+            </h1>
+            <p>
+              L'association "Wild Christmas" offre des cadeaux réconfortants aux
+              plus démunis, incarnant un phare d'espoir pour la communauté
+            </p>
+            <div className="Input-button-logo">
+              <input
+                type="text"
+                required
+                minLength="4"
+                maxLength="25"
+                placeholder="Nom, Prenom"
+              />
 
-            <NavLink to={"Home"}>
               <button type="button">GO →</button>
-            </NavLink>
+
             <img src="/traineau.png" />
+
+              <button type="button">GO →</button>
+              <img src="/traineau.png" />
+            </div>
+
           </div>
         </div>
       </div>

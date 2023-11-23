@@ -1,19 +1,13 @@
-import "./styles/index.scss";
-import Accueil from './pages/Accueil';
 
+import "./styles/index.scss";
+import Accueil from "./pages/Accueil";
 
 function App() {
- 
-
   return (
     <>
-
-    <Accueil />
-
-
-
+      <Accueil />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

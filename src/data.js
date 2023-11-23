@@ -1,5 +1,7 @@
+
 export default function data () {
   [
+
   {
     "id": 1,
     "Description": "Coffret collector Harry Potter",
@@ -10,7 +12,7 @@ export default function data () {
     "id": 2,
     "Description": "Sapiens: Une brève histoire de l'humanité de Yuval Noah Harari",
     "Category": "Livres et films",
-    "Image": "/sapiens"
+    "Image": "/sapiens.jpg"
   },
   {
     "id": 3,
@@ -188,4 +190,5 @@ export default function data () {
     "Image": "/pantoufles.jfif"
   }
 ]
-}
+
+export default data;
