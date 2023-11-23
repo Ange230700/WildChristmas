@@ -1,4 +1,4 @@
-import Cadeaux from "./Cadeaux.jsx";
+import Cadeau from "./Cadeau";
 import data from "../data.json";
 import PropTypes from "prop-types";
 
@@ -14,7 +14,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -32,7 +32,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -50,7 +50,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -68,7 +68,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -86,7 +86,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -104,7 +104,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -122,7 +122,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -140,7 +140,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
@@ -158,7 +158,7 @@ function ListCadeaux({ id, Description, Category, Image }) {
           .map((cadeau) => {
             return (
               <div key={cadeau.id} className="cadeau-container">
-                <Cadeaux
+                <Cadeau
                   id={cadeau.id}
                   Description={cadeau.Description}
                   Category={cadeau.Category}
