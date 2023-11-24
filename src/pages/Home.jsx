@@ -9,9 +9,9 @@ export default function Home() {
   const [arrayCadeaux, setArrayCadeaux] = useState([]);
   const { state } = useLocation();
   const [sleigh, setSleigh] = useState(true);
-  console.log(state);
+  const [limitMessage, setLimitMessage] = useState("");
   return (
-<div className="home">
+    <div className="home">
       <div className="state">
         <p>
           Bienvenue </p>
@@ -28,10 +28,12 @@ export default function Home() {
           />
       </div>
       <div className="cadeau-wish">
-        <div className="list__cadeaux">
+        <div className="liste__cadeaux">
           <ListCadeaux
             arrayCadeaux={arrayCadeaux}
             setArrayCadeaux={setArrayCadeaux}
+            setLimitMessage={setLimitMessage}
+            limitMessage={limitMessage}
             setSleigh={setSleigh}
           />
         </div>
@@ -39,6 +41,8 @@ export default function Home() {
           <WishList
             arrayCadeaux={arrayCadeaux}
             setArrayCadeaux={setArrayCadeaux}
+            limitMessage={limitMessage}
+            setLimitMessage={setLimitMessage}
             sleigh={sleigh}
           />
         </div>
