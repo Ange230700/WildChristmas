@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import Cadeau from "./Cadeau";
 const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
-  
   return (
     <div
       className={`containerModal ${

@@ -6,6 +6,7 @@ import Modal from "./Modal";
 const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
   const [isModal, setIsModal] = useState(false);
   function handleModal() {
+    console.log("test");
     if (isModal) {
       setIsModal((current) => !current);
     } else {
@@ -24,6 +25,9 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
 
   return (
     <>
+      <div className="neige-wish">
+        <img src="/neige.png" />
+      </div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
         {arrayCadeaux.length < 6 &&
@@ -43,10 +47,18 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
           arrayCadeaux.length >= 6 &&
           arrayCadeaux.pop() && <p>Non non non, 5 cadeaux max !</p>}
         <div className="containerButton">
-          <button type="button" className="validButton" onClick={() => handleModal()}>
+          <button
+            type="button"
+            className="validButton"
+            onClick={() => handleModal()}
+          >
             Validé
           </button>
-          <Modal handleModal={handleModal} isModal={isModal} arrayCadeaux={arrayCadeaux} />
+          <Modal
+            handleModal={handleModal}
+            isModal={isModal}
+            arrayCadeaux={arrayCadeaux}
+          />
         </div>
       </div>
     </>
