@@ -60,8 +60,9 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux, sleigh }) => {
           >
             Validé
           </button>
+
           <Modal
-            handleModal={handleModal}
+            handleModal={() => handleModal()}
             isModal={isModal}
             arrayCadeaux={arrayCadeaux}
           />
