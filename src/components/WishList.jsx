@@ -61,8 +61,7 @@ const Wishlist = ({
               </button>
             ))}
         </div>
-      </div>
-      <div className="containerButton">
+        <div className="containerButton">
         <button
           type="button"
           className="validButton"
@@ -77,6 +76,8 @@ const Wishlist = ({
           arrayCadeaux={arrayCadeaux}
         />
       </div>
+      </div>
+      
     </>
   );
 };
