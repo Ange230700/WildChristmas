@@ -2,10 +2,11 @@ import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
 
-function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
+function ListCadeaux({ arrayCadeaux, setArrayCadeaux, setSleigh }) {
   function handleClick(e) {
     console.log(typeof setArrayCadeaux);
     setArrayCadeaux([...arrayCadeaux, e]);
+    setSleigh((current) => !current);
   }
 
   return (

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Cadeau from "./Cadeau";
 import Modal from "./Modal";
 
-const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
+const Wishlist = ({ arrayCadeaux, setArrayCadeaux, sleigh }) => {
   const [isModal, setIsModal] = useState(false);
   function handleModal() {
     if (isModal) {
@@ -11,7 +11,7 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
     } else {
       setIsModal((current) => !current);
     }
-  }
+  } 
 
   function handleClick(cadeau) {
     console.log(cadeau);
@@ -24,6 +24,9 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
 
   return (
     <>
+    <div className={`sleigh ${sleigh ? "leftMove" : "rightMove"}`}>
+      <img src="/images/sleigh.webp" />
+    </div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
         {arrayCadeaux.map((cadeau) => (
