@@ -12,10 +12,6 @@ const propsToPass = {
   setArrayCadeaux: () => {},
 };
 
-const propsToPass2 = {
-  arrayCadeaux: [],
-};
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/wishlist",
-    element: <WishList {...propsToPass2} />,
+    element: <WishList {...propsToPass} />,
   },
 ]);
 

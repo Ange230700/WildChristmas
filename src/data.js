@@ -9,19 +9,19 @@ const data = [
     "id": 2,
     "Description": "Sapiens de Yuval Noah Harari",
     "Category": "livres",
-    "Image": "/sapiens.webp"
+    "Image": "/sapiens.jpg"
   },
   {
     "id": 3,
     "Description": "Circe de Madeline Miller",
     "Category": "livres",
-    "Image": "/circe.png"
+    "Image": "/circe.jpg"
   },
   {
     "id": 4,
     "Description": "Le voyage de Chihiro",
     "Category": "livres",
-    "Image": "/chihiro.png"
+    "Image": "/chihiro.jpg"
   },
   {
     "id": 5,
@@ -188,3 +188,4 @@ const data = [
 ]
 
 export default data;
+>>>>>>> d1db5cd3dff107b3b61bebcecf0983c03c65ff2c
