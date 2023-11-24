@@ -26,9 +26,9 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
   return (
     <>
     <div className="neige-wish">
-          <img src="/neige.png" /></div>
+          <img src="/neige2.png" /></div>
       <div className="wishlist-container">
-        <h2>Ma Wishlist</h2>
+        <h2>MA WISHLIST</h2>
         <div className="cadeaux">
         {arrayCadeaux.map((cadeau) => (
           <button key={cadeau.id} onClick={() => handleClick(cadeau)} className="button-wish">
