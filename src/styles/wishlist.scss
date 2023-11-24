@@ -53,9 +53,8 @@
   cursor: pointer;
   margin-left: 10px;
 
-
-&:hover {
-  background-color: #182449; 
-  transition: 0.5s;/* Dark Green */
-}
+  &:hover {
+    background-color: #182449;
+    transition: 0.5s; /* Dark Green */
+  }
 }

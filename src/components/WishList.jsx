@@ -43,7 +43,7 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
           <button type="button" className="validButton" onClick={handleModal}>
             Validé
           </button>
-          <Modal handleModal={() => handleModal()} isModal={isModal} />
+          <Modal handleModal={() => handleModal()} isModal={isModal} arrayCadeaux={arrayCadeaux}/>
         </div>
       </div>
     </>
