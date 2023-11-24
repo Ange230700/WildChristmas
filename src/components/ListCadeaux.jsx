@@ -2,10 +2,12 @@ import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
 
-function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
+function ListCadeaux({ arrayCadeaux, setArrayCadeaux, setLimitMessage }) {
   function handleClick(e) {
     console.log(typeof setArrayCadeaux);
-    if (arrayCadeaux.length < 6) setArrayCadeaux([...arrayCadeaux, e]);
+    if (arrayCadeaux.length < 5) setArrayCadeaux([...arrayCadeaux, e]);
+    if (arrayCadeaux.length === 5)
+      setLimitMessage("Non non non, 5 cadeaux max !");
   }
 
   return (
@@ -189,6 +191,8 @@ ListCadeaux.propTypes = {
     })
   ).isRequired,
   setArrayCadeaux: PropTypes.func,
+  setLimitMessage: PropTypes.func,
+  limitMessage: PropTypes.string,
 };
 
 export default ListCadeaux;

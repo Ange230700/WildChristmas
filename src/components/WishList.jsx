@@ -3,8 +3,14 @@ import PropTypes from "prop-types";
 import Cadeau from "./Cadeau";
 import Modal from "./Modal";
 
-const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
+const Wishlist = ({
+  arrayCadeaux,
+  setArrayCadeaux,
+  limitMessage,
+  setLimitMessage,
+}) => {
   const [isModal, setIsModal] = useState(false);
+
   function handleModal() {
     console.log("test");
     if (isModal) {
@@ -21,6 +27,7 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
       (cadeauInArray) => cadeauInArray.id !== cadeau.id
     );
     setArrayCadeaux(updatedArray);
+    setLimitMessage("");
   }
 
   return (
@@ -43,9 +50,7 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
               </div>
             </button>
           ))}
-        {arrayCadeaux.length > 0 &&
-          arrayCadeaux.length >= 6 &&
-          arrayCadeaux.pop() && <p>Non non non, 5 cadeaux max !</p>}
+        {limitMessage && <p>{limitMessage}</p>}
         <div className="containerButton">
           <button
             type="button"
@@ -77,6 +82,8 @@ Wishlist.propTypes = {
   setArrayCadeaux: PropTypes.func,
   isModal: PropTypes.bool.isRequired,
   setIsModal: PropTypes.func.isRequired,
+  limitMessage: PropTypes.string.isRequired,
+  setLimitMessage: PropTypes.func.isRequired,
 };
 
 export default Wishlist;
