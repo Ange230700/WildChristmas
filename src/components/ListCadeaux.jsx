@@ -2,9 +2,10 @@ import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
 
-function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
+function ListCadeaux({ arrayCadeaux, setArrayCadeaux, setSleigh }) {
   function handleClick(e) {
     console.log(typeof setArrayCadeaux);
+    setSleigh((current) => !current);
     if (arrayCadeaux.length < 6) setArrayCadeaux([...arrayCadeaux, e]);
   }
 
