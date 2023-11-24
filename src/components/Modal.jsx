@@ -21,9 +21,12 @@ const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
           close
         </button>
       </div>
+      <div className="texteName">
+      <p>Voici vos choix <strong>{state.texte} !</strong></p>
+      </div>
       <div className="containerCadeaux">
         {arrayCadeaux.map((cadeau) => (
-          <div key={cadeau.id} className="cadeau-container">
+          <div key={cadeau.id} className="cadeauContainerModal">
             <Cadeau
               id={cadeau.id}
               Description={cadeau.Description}
@@ -33,9 +36,7 @@ const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
           </div>
         ))}
       </div>
-      <div className="texteName">
-      <p>Voici vos choix <strong>{state.texte} !</strong></p>
-      </div>
+      
       </div>
 
   );

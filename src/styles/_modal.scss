@@ -3,9 +3,18 @@
     top: calc((100% - 70%)/2);
     left: calc((100% - 50%)/2);
     width: 50%;
-    height: 70%;
+    height: 80%;
     background-color: #182449;
     border-radius: 2vh;
+
+    .containerCadeaux{
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      
+      
+    }
 }
 .close {
 	overflow: hidden;
@@ -84,4 +93,8 @@
   // }
 .texteName{
   text-align: center;
+}
+
+.cadeauContainerModal{
+  border-radius: 50%;
 }
