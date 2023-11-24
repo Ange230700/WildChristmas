@@ -41,6 +41,7 @@ const Wishlist = ({
       </div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
+        {limitMessage && <p className="message">{limitMessage}</p>}
         <div className="cadeaux">
           {arrayCadeaux.length < 6 &&
             arrayCadeaux.map((cadeau) => (
@@ -59,21 +60,20 @@ const Wishlist = ({
                 </div>
               </button>
             ))}
-          {limitMessage && <p>{limitMessage}</p>}
-          <div className="containerButton">
-            <button
-              type="button"
-              className="validButton"
-              onClick={() => handleModal()}
-            >
-              Validé
-            </button>
-            <Modal
-              handleModal={handleModal}
-              isModal={isModal}
-              arrayCadeaux={arrayCadeaux}
-            />
-          </div>
+        </div>
+        <div className="containerButton">
+          <button
+            type="button"
+            className="validButton"
+            onClick={() => handleModal()}
+          >
+            Validé
+          </button>
+          <Modal
+            handleModal={handleModal}
+            isModal={isModal}
+            arrayCadeaux={arrayCadeaux}
+          />
         </div>
       </div>
     </>

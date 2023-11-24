@@ -194,6 +194,7 @@ ListCadeaux.propTypes = {
   setArrayCadeaux: PropTypes.func,
   setLimitMessage: PropTypes.func,
   limitMessage: PropTypes.string,
+  setSleigh: PropTypes.func,
 };
 
 export default ListCadeaux;
