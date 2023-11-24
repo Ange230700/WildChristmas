@@ -45,7 +45,7 @@
 }
 .neige-wish{
   position: absolute;
-  top : 13px;
+  top : 35px;
   right: 30px;
   width: 51%;
   height: 20%;
@@ -95,6 +95,7 @@ width: 99%;
   padding: 15px;
   display: flex;
   align-items: center;
+  
 }
 
 .product-name {
@@ -139,6 +140,7 @@ width: 99%;
 .button-wish{
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  cursor: pointer;
 }
 
 
