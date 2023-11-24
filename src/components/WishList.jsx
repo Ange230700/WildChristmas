@@ -24,10 +24,13 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
 
   return (
     <>
+    <div className="neige-wish">
+          <img src="/neige.png" /></div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
+        <div className="cadeaux">
         {arrayCadeaux.map((cadeau) => (
-          <button key={cadeau.id} onClick={() => handleClick(cadeau)}>
+          <button key={cadeau.id} onClick={() => handleClick(cadeau)} className="button-wish">
             <div className="cadeau-container">
               <Cadeau
                 id={cadeau.id}
@@ -38,12 +41,14 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
             </div>
           </button>
         ))}
+        </div>
         <div className="containerButton">
           <button type="button" className="validButton" onClick={handleModal}>
             Validé
           </button>
           <Modal handleModal={() => handleModal()} isModal={isModal} />
         </div>
+      
       </div>
     </>
   );

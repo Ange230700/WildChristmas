@@ -226,7 +226,6 @@ export default function Accueil() {
             <div className="Input-button-logo">
               <input
                 type="text"
-                required
                 minLength="4"
                 maxLength="25"
                 placeholder="Nom, Prenom"
