@@ -1,51 +1,50 @@
-export default function data () {
-  [
+const data = [
   {
     "id": 1,
     "Description": "Coffret collector Harry Potter",
-    "Category": "Livres et films",
+    "Category": "livres",
     "Image": "/harry_potter.jpg"
   },
   {
     "id": 2,
-    "Description": "Sapiens: Une brève histoire de l'humanité de Yuval Noah Harari",
-    "Category": "Livres et films",
-    "Image": "/sapiens"
+    "Description": "Sapiens de Yuval Noah Harari",
+    "Category": "livres",
+    "Image": "/sapiens.jpg"
   },
   {
     "id": 3,
     "Description": "Circe de Madeline Miller",
-    "Category": "Livres et films",
+    "Category": "livres",
     "Image": "/circe.jpg"
   },
   {
     "id": 4,
     "Description": "Le voyage de Chihiro",
-    "Category": "Livres et films",
-    "Image": "/chihiro"
+    "Category": "livres",
+    "Image": "/chihiro.jpg"
   },
   {
     "id": 5,
     "Description": "Coffret Chanel n°5",
-    "Category": "Cosmétiques",
+    "Category": "cosmetiques",
     "Image": "/chanel.jpg"
   },
   {
     "id": 6,
     "Description": "Coffret maquillage Urban Decay",
-    "Category": "Cosmétiques",
+    "Category": "cosmetiques",
     "Image": "/urban_decay.jpg"
   },
   {
     "id": 7,
     "Description": "Tondeuse à barbe",
-    "Category": "Cosmétiques",
+    "Category": "cosmetiques",
     "Image": "/tondeuse.jpg"
   },
   {
     "id": 8,
     "Description": "Coffret pour homme Clinique",
-    "Category": "Cosmétiques",
+    "Category": "cosmetiques",
     "Image": "/clinique.jpg"
   },
   {
@@ -64,122 +63,121 @@ export default function data () {
     "id": 11,
     "Description": "Enceinte Bluetooth JBL Charge 4",
     "Category": "electronique",
-    "Image": "/public/images/electronique/JBL_CHARGE4_BLACK_BB_Global_Side.png"
+    "Image": "/JBL_CHARGE4_BLACK_BB_Global_Side.png"
   },
   {
     "id": 12,
     "Description": "Appareil photo instantané Fujifilm Instax Mini 11",
     "Category": "electronique",
-    "Image": "/public/images/electronique/instax.png"
+    "Image": "/instax.png"
   },
   {
     "id": 13,
     "Description": "Drone DJI Mini 2",
     "Category": "electronique",
-    "Image": "/public/images/electronique/dji-mini-2-se.png"
+    "Image": "/dji-mini-2-se.png"
   },
   {
     "id": 14,
     "Description": "Écouteurs sans fil Apple AirPods Pro",
     "Category": "electronique",
-    "Image": "/public/images/electronique/apple-airpods-pro.png"
+    "Image": "/apple-airpods-pro.png"
   },
   {
     "id": 15,
     "Description": "Lampe de bureau LED avec chargeur sans fil",
     "Category": "electronique",
-    "Image": "/public/images/electronique/lampe-de-table-licorne.png"
+    "Image": "/lampe-de-table-licorne.png"
   },
   {
     "id": 16,
     "Description": "Chucky",
-    "Category": "Poupée",
-    "Image": "/chucky"
+    "Category": "poupée_jouet_peluche",
+    "Image": "/chucky.jpg"
   },
   {
     "id": 17,
     "Description": "pat patrouille",
-    "Category": "Jouet",
-    "Image": "/Pat-patrouille"
+    "Category": "poupée_jouet_peluche",
+    "Image": "/Pat-patrouille.jpg"
   },
   {
     "id": 18,
-    "Description": "belle poupée",
-    "Category": "Poupée",
-    "Image": "/poupée-moche"
+    "Description": "Belle poupée",
+    "Category": "poupée_jouet_peluche",
+    "Image": "/poupée-moche.jpeg"
   },
   {
     "id": 19,
     "Description": "Sylvanian",
-    "Category": "peluche",
-    "Image": "/Sylvanian"
+    "Category": "poupée_jouet_peluche",
+    "Image": "/Sylvanian.jpg"
   },
   {
     "id": 20,
     "Description": "Yoda",
-    "Category": "Peluche",
-    "Image": "/yoda"
+    "Category": "poupée_jouet_peluche",
+    "Image": "/yoda.jpg"
   },
   {
     "id": 21,
     "Description": "Montre connectée Garmin Forerunner 45",
-    "Category": "Sports",
-    "Image": "public/images/sports/Garmin Forerunner 45.webp"
+    "Category": "sports",
+    "Image": "/Garmin Forerunner 45.webp"
   },
   {
     "id": 22,
     "Description": "Ensemble de yoga Liforme",
-    "Category": "Sports",
-    "Image": "public/images/sports/Ensemble de yoga Liforme.jpg"
+    "Category": "sports",
+    "Image": "/Ensemble de yoga Liforme.jpg"
   },
   {
     "id": 23,
     "Description": "Casque de réalité virtuelle Meta Quest 2",
-    "Category": "Sports",
-    "Image": "public/images/sports/casque-de-realite-virtuelle-meta-quest-quest-2.webp"
+    "Category": "sports",
+    "Image": "/casque-de-realite-virtuelle-meta-quest-quest-2.webp"
   },
   {
     "id": 24,
     "Description": "Vélo d'appartement pliable Ultrasport F-Bike",
-    "Category": "Sports",
-    "Image": "public/images/sports/ultrasport-f-bike-200b-velo-d-appartement-pliant-a.webp"
+    "Category": "sports",
+    "Image": "/ultrasport-f-bike-200b-velo-d-appartement-pliant-a.webp"
   },
   {
     "id": 25,
     "Description": "Chaussures de course Nike Air Zoom Pegasus",
     "Category": "sports",
-
-    "Image": "public/images/sports/nike-air-zoom-pegasus-34-w-chaussures-running-femme.jpg"
+    "Image": "/nike-air-zoom-pegasus-34-w-chaussures-running-femme.jpg"
   },
   {
     "id": 26,
-    "Description": "Vaginette - Homme",
-    "Category": "18 +",
-    "Image": ""
+    "Description": "Vaginette pour homme",
+    "Category": "18ans",
+    "Image": "/vaginette.jpg"
   },
   {
     "id": 27,
-    "Description": "Sex Toys (Bad Dragon) - Femme",
-    "Category": "18 +",
-    "Image": ""
+    "Description": "Sex Toys (Bad Dragon) Femme",
+    "Category": "18ans",
+    "Image": "/Bad-dragon.jpg"
   },
   {
     "id": 28,
-    "Description": "Poupée Gonflabe - Homme",
-    "Category": "18 +",
-    "Image": ""
+    "Description": "Poupée Gonflabe Homme",
+    "Category": "18ans",
+    "Image": "/poupéG-Homme.jpg"
   },
   {
     "id": 29,
-    "Description": "Poupée Gonflabe - Femme",
-    "Category": "18 +",
-    "Image": ""
+    "Description": "Poupée Gonflabe Femme",
+    "Category": "18ans",
+    "Image": "/poupéG-Femme.jpg"
   },
   {
     "id": 30,
     "Description": "Lingerie - Femme",
-    "Category": "18 +",
-    "Image": "/chihiro.jpg"
+    "Category": "18ans",
+    "Image": "/Lingerie-fine.jpg"
   },
   {
     "id": 31,
@@ -188,4 +186,5 @@ export default function data () {
     "Image": "/pantoufles.jfif"
   }
 ]
-}
+
+export default data;

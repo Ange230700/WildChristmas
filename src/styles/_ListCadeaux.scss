@@ -1,0 +1,46 @@
+.liste_cadeaux {
+  height: 25%;
+  padding: 20px;
+  // width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+
+
+
+  .category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    .bloc_cadeaux {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      height: 100%;
+
+      button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px; /* width of the entire scrollbar */
+  padding-right: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0); /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: none; /* creates padding around scroll thumb */
+}
