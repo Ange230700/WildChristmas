@@ -69,8 +69,9 @@ const Wishlist = ({
           >
             Validé
           </button>
+
           <Modal
-            handleModal={handleModal}
+            handleModal={() => handleModal()}
             isModal={isModal}
             arrayCadeaux={arrayCadeaux}
           />
