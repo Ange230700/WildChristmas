@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Cadeau from "./Cadeau";
 import PropTypes from "prop-types";
 
@@ -16,10 +16,11 @@ const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
         isModal === true ? "openModal" : "closeModal"
       }`}
     >
-      <div className="containerButton">
+      <div className="container-Button">
+      <Link to="/">
         <button className="close" onClick={handleModal}>
           close
-        </button>
+        </button></Link>
       </div>
       <div className="texteName">
       <p>Voici vos choix <strong>{state.texte} !</strong></p>
