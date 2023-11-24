@@ -25,31 +25,44 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
 
   return (
     <>
-    <div className="neige-wish">
-          <img src="/neige2.png" /></div>
+
+      <div className="neige-wish">
+        <img src="/neige2.png" />
+      </div>
       <div className="wishlist-container">
-        <h2>MA WISHLIST</h2>
+        <h2>Ma Wishlist</h2>
         <div className="cadeaux">
-        {arrayCadeaux.map((cadeau) => (
-          <button key={cadeau.id} onClick={() => handleClick(cadeau)} className="button-wish">
-            <div className="cadeau-container">
-              <Cadeau
-                id={cadeau.id}
-                Description={cadeau.Description}
-                Category={cadeau.Category}
-                Image={cadeau.Image}
-              />
-            </div>
-          </button>
-        ))}
+        {arrayCadeaux.length < 6 &&
+          arrayCadeaux.map((cadeau) => (
+            <button key={cadeau.id} onClick={() => handleClick(cadeau)} className="button-wish">
+              <div className="cadeau-container">
+                <Cadeau
+                  id={cadeau.id}
+                  Description={cadeau.Description}
+                  Category={cadeau.Category}
+                  Image={cadeau.Image}
+                />
+              </div>
+            </button>
+          ))}
+        {arrayCadeaux.length > 0 &&
+          arrayCadeaux.length >= 6 &&
+          arrayCadeaux.pop() && <p>Non non non, 5 cadeaux max !</p>}
         </div>
         <div className="containerButton">
-          <button type="button" className="validButton" onClick={handleModal}>
+          <button
+            type="button"
+            className="validButton"
+            onClick={() => handleModal()}
+          >
             Validé
           </button>
-          <Modal handleModal={() => handleModal()} isModal={isModal} />
+          <Modal
+            handleModal={handleModal}
+            isModal={isModal}
+            arrayCadeaux={arrayCadeaux}
+          />
         </div>
-      
       </div>
     </>
   );
@@ -65,6 +78,8 @@ Wishlist.propTypes = {
     })
   ).isRequired,
   setArrayCadeaux: PropTypes.func,
+  isModal: PropTypes.bool.isRequired,
+  setIsModal: PropTypes.func.isRequired,
 };
 
 export default Wishlist;

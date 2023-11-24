@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function ListCadeaux({ arrayCadeaux, setArrayCadeaux }) {
   function handleClick(e) {
     console.log(typeof setArrayCadeaux);
-    setArrayCadeaux([...arrayCadeaux, e]);
+    if (arrayCadeaux.length < 6) setArrayCadeaux([...arrayCadeaux, e]);
   }
 
   return (
