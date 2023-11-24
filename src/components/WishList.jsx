@@ -28,14 +28,16 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux, sleigh }) => {
     <div className={`sleigh ${sleigh ? "leftMove" : "rightMove"}`}>
       <img src="/images/sleigh.webp" />
     </div>
+
       <div className="neige-wish">
-        <img src="/neige.png" />
+        <img src="/neige2.png" />
       </div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
+        <div className="cadeaux">
         {arrayCadeaux.length < 6 &&
           arrayCadeaux.map((cadeau) => (
-            <button key={cadeau.id} onClick={() => handleClick(cadeau)}>
+            <button key={cadeau.id} onClick={() => handleClick(cadeau)} className="button-wish">
               <div className="cadeau-container">
                 <Cadeau
                   id={cadeau.id}
@@ -49,6 +51,7 @@ const Wishlist = ({ arrayCadeaux, setArrayCadeaux, sleigh }) => {
         {arrayCadeaux.length > 0 &&
           arrayCadeaux.length >= 6 &&
           arrayCadeaux.pop() && <p>Non non non, 5 cadeaux max !</p>}
+        </div>
         <div className="containerButton">
           <button
             type="button"
