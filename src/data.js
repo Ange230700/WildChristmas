@@ -188,4 +188,3 @@ const data = [
 ]
 
 export default data;
->>>>>>> d1db5cd3dff107b3b61bebcecf0983c03c65ff2c

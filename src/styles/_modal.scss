@@ -43,8 +43,8 @@
 }
 .openModal {
     animation: forwards appearIn ease 1s;
-    transform: scale(0);
-    opacity: 0;
+    transform: scale(1);
+    opacity: 1;
     transition: all 0.5s ease;
   }
   
@@ -63,9 +63,9 @@
   // }
   .closeModal {
     animation: forwards appearOut ease 1s;
-    transform: scale(1);
+    transform: scale(0);
     transition: all 0.5s ease;
-    opacity: 1;
+    opacity: 0;
   }
   
   // @keyframes appearOut {

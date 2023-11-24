@@ -6,7 +6,6 @@ const Modal = ({ isModal, handleModal }) => {
       }`}
     >
       <div>
-
         <button className="close" onClick={handleModal} >close</button>
       </div>
     </div>
