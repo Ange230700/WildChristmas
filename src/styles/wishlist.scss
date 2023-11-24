@@ -69,7 +69,9 @@ img{
 }
 
 
-.bouton-valider {
+
+
+.validButton {
   border-radius: 500px;
   background-color: #c62828;
   color: #fff;
@@ -77,10 +79,12 @@ img{
   padding: 10px 20px;
   cursor: pointer;
   margin-left: 10px;
-}
 
-.bouton-valider:hover {
-  background-color: #2e7d32; /* Dark Green */
+
+&:hover {
+  background-color: #182449; 
+  transition: 0.5s;/* Dark Green */
+}
 }
 
 .button-wish{
