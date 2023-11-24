@@ -8,10 +8,6 @@
   color: white;
   height: 100vh;
   overflow: hidden;
-  
-  strong{
-    color: #d90416;
-  }
 
 
 
@@ -20,7 +16,17 @@
   width: 100%;
   margin-bottom: 20px;
   font-size: 30px;
+  display: flex;
   // background-color: ;
+p{
+width: 11%;
+}
+  strong{
+    color: #d90416;
+  }
+.Typewriter{
+  width: 30%;
+}
 }
 .cadeau-wish{
   display: flex;
