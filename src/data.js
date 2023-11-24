@@ -1,7 +1,4 @@
-
-export default function data () {
-  [
-
+const data = [
   {
     "id": 1,
     "Description": "Coffret collector Harry Potter",
@@ -189,4 +186,5 @@ export default function data () {
     "Image": "/pantoufles.jfif"
   }
 ]
-}
+
+export default data;
