@@ -16,7 +16,7 @@ const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
         isModal === true ? "openModal" : "closeModal"
       }`}
     >
-      <div>
+      <div className="containerButton">
         <button className="close" onClick={handleModal}>
           close
         </button>
@@ -36,7 +36,7 @@ const Modal = ({ isModal, handleModal, arrayCadeaux }) => {
           </div>
         ))}
       </div>
-      
+      <p>L'association Wild Christmas vous remercie. <a href="https://www.google.com/intl/fr/gmail/about/">Partagez vos envies</a> et si vous n'avez pas tout trouvé, voici le numéro du père noël 65 65 65. <p className="smallText">50 euros la minute + prix d'un appel local</p> </p>
       </div>
 
   );
