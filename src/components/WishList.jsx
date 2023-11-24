@@ -6,6 +6,7 @@ import Modal from "./Modal";
 const Wishlist = ({ arrayCadeaux, setArrayCadeaux }) => {
   const [isModal, setIsModal] = useState(false);
   function handleModal() {
+    console.log("test");
     if (isModal) {
       setIsModal((current) => !current);
     } else {
