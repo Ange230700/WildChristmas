@@ -61,21 +61,21 @@ const Wishlist = ({
               </button>
             ))}
         </div>
-        <div className="containerButton">
-          <button
-            type="button"
-            className="validButton"
-            onClick={() => handleModal()}
-          >
-            Validé
-          </button>
+      </div>
+      <div className="containerButton">
+        <button
+          type="button"
+          className="validButton"
+          onClick={() => handleModal()}
+        >
+          Validé
+        </button>
 
-          <Modal
-            handleModal={() => handleModal()}
-            isModal={isModal}
-            arrayCadeaux={arrayCadeaux}
-          />
-        </div>
+        <Modal
+          handleModal={() => handleModal()}
+          isModal={isModal}
+          arrayCadeaux={arrayCadeaux}
+        />
       </div>
     </>
   );
