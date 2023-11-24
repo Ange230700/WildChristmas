@@ -2,9 +2,10 @@ import Cadeau from "./Cadeau";
 import data from "../data.js";
 import PropTypes from "prop-types";
 
-function ListCadeaux({ arrayCadeaux, setArrayCadeaux, setLimitMessage }) {
+function ListCadeaux({ arrayCadeaux, setArrayCadeaux, setLimitMessage, setSleigh }) {
   function handleClick(e) {
     console.log(typeof setArrayCadeaux);
+    setSleigh((current) => !current);
     if (arrayCadeaux.length < 5) setArrayCadeaux([...arrayCadeaux, e]);
     if (arrayCadeaux.length === 5)
       setLimitMessage("Non non non, 5 cadeaux max !");

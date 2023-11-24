@@ -8,6 +8,7 @@ const Wishlist = ({
   setArrayCadeaux,
   limitMessage,
   setLimitMessage,
+  sleigh,
 }) => {
   const [isModal, setIsModal] = useState(false);
 
@@ -32,38 +33,47 @@ const Wishlist = ({
 
   return (
     <>
+      <div className={`sleigh ${sleigh ? "leftMove" : "rightMove"}`}>
+        <img src="/images/sleigh.webp" />
+      </div>
       <div className="neige-wish">
-        <img src="/neige.png" />
+        <img src="/neige2.png" />
       </div>
       <div className="wishlist-container">
         <h2>Ma Wishlist</h2>
-        {arrayCadeaux.length < 6 &&
-          arrayCadeaux.map((cadeau) => (
-            <button key={cadeau.id} onClick={() => handleClick(cadeau)}>
-              <div className="cadeau-container">
-                <Cadeau
-                  id={cadeau.id}
-                  Description={cadeau.Description}
-                  Category={cadeau.Category}
-                  Image={cadeau.Image}
-                />
-              </div>
+        <div className="cadeaux">
+          {arrayCadeaux.length < 6 &&
+            arrayCadeaux.map((cadeau) => (
+              <button
+                key={cadeau.id}
+                onClick={() => handleClick(cadeau)}
+                className="button-wish"
+              >
+                <div className="cadeau-container">
+                  <Cadeau
+                    id={cadeau.id}
+                    Description={cadeau.Description}
+                    Category={cadeau.Category}
+                    Image={cadeau.Image}
+                  />
+                </div>
+              </button>
+            ))}
+          {limitMessage && <p>{limitMessage}</p>}
+          <div className="containerButton">
+            <button
+              type="button"
+              className="validButton"
+              onClick={() => handleModal()}
+            >
+              Validé
             </button>
-          ))}
-        {limitMessage && <p>{limitMessage}</p>}
-        <div className="containerButton">
-          <button
-            type="button"
-            className="validButton"
-            onClick={() => handleModal()}
-          >
-            Validé
-          </button>
-          <Modal
-            handleModal={handleModal}
-            isModal={isModal}
-            arrayCadeaux={arrayCadeaux}
-          />
+            <Modal
+              handleModal={handleModal}
+              isModal={isModal}
+              arrayCadeaux={arrayCadeaux}
+            />
+          </div>
         </div>
       </div>
     </>
@@ -84,6 +94,7 @@ Wishlist.propTypes = {
   setIsModal: PropTypes.func.isRequired,
   limitMessage: PropTypes.string.isRequired,
   setLimitMessage: PropTypes.func.isRequired,
+  sleigh: PropTypes.bool.isRequired,
 };
 
 export default Wishlist;

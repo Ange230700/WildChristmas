@@ -6,8 +6,8 @@ import WishList from "../components/WishList";
 export default function Home() {
   const [arrayCadeaux, setArrayCadeaux] = useState([]);
   const { state } = useLocation();
+  const [sleigh, setSleigh] = useState(true);
   const [limitMessage, setLimitMessage] = useState("");
-  console.log(state);
   return (
     <div className="home">
       <div className="state">
@@ -22,6 +22,7 @@ export default function Home() {
             setArrayCadeaux={setArrayCadeaux}
             setLimitMessage={setLimitMessage}
             limitMessage={limitMessage}
+            setSleigh={setSleigh}
           />
         </div>
         <div className="wishlist">
@@ -30,6 +31,7 @@ export default function Home() {
             setArrayCadeaux={setArrayCadeaux}
             limitMessage={limitMessage}
             setLimitMessage={setLimitMessage}
+            sleigh={sleigh}
           />
         </div>
       </div>
