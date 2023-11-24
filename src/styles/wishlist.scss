@@ -45,7 +45,7 @@
 }
 .neige-wish {
   position: absolute;
-  top: 13px;
+  top: 35px;
   right: 30px;
   width: 51%;
   height: 20%;
@@ -72,6 +72,18 @@
     margin-left: 8%;
     margin-bottom: 30px;
     row-gap: 10px;
+  }
+
+  .message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    row-gap: 10px;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    text-align: center;
   }
 }
 
@@ -131,6 +143,7 @@
 .button-wish {
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  cursor: pointer;
 }
 
 .containerButton {
