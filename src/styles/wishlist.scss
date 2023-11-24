@@ -1,12 +1,11 @@
 .neige-wish{
   position: absolute;
-  top : 62px;
-  right: 24px;
-  height: 10%;
-  width: 45%;
+  top : 13px;
+  right: 30px;
+  width: 51%;
+  height: 20%;
 img{
-  width: 98%;
-  height: 100%;
+width: 99%;
 }
 
 
@@ -15,7 +14,7 @@ img{
 
 .wishlist-container {
   height: 25%;
-  width: 42vw;
+  width: 50vw;
   border: 1px solid #dddddd48;
   box-shadow: 0 0 10px rgba(238, 237, 237, 0.1);
   margin: 20px;
@@ -25,20 +24,25 @@ img{
   .cadeaux{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 8%;
+    margin-bottom: 30px;
+    row-gap: 10px;
   }
 
 }
 
 .wishlist-container h2 {
-  padding: 30px 5px;
+  padding: 0 5px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   color: #d90416;
   font-size: 24px;
   margin-bottom: 15px;
+  transform: scaleY(120%);
 }
 
 .wishlist-item {
@@ -93,3 +97,6 @@ img{
 }
 
 
+.containerButton {
+  text-align: center;
+}
