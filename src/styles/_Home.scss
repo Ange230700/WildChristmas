@@ -1,0 +1,29 @@
+.home {
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.945);
+  color: white;
+  strong{
+    color: #d90416;
+  }
+  
+.state{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 30px;
+  // background-color: ;
+}
+.cadeau-wish{
+  display: flex;
+  margin: 0 auto;
+  .trait{
+    width: 1px;
+    height: 70%;
+  }
+
+}
+
+
+}

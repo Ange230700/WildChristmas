@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ListCadeaux from "./components/ListCadeaux.jsx";
-import Cadeau from "./components/Cadeau.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
-import Wishlist from "./components/WishList.jsx";
+import WishList from "./components/WishList.jsx";
+import Cadeau from "./components/Cadeau.jsx";
+import ListCadeaux from "./components/ListCadeaux.jsx";
+
+const propsToPass = {
+  arrayCadeaux: [],
+  setArrayCadeaux: () => {},
+};
 
 const router = createBrowserRouter([
   {
@@ -14,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Home",
-    element: <Home />,
+    element: <Home {...propsToPass} />,
   },
   {
     path: "/Cadeau",
@@ -22,16 +27,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/ListCadeaux",
-    element: <ListCadeaux />,
+    element: <ListCadeaux {...propsToPass} />,
   },
   {
     path: "/wishlist",
-    element: <Wishlist />,
+    element: <WishList {...propsToPass} />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
