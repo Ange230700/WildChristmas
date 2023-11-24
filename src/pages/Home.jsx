@@ -10,7 +10,10 @@ export default function Home() {
   console.log(state);
   return (
     <div className="home">
-      <p>{state.texte}</p>
+      <div className="state">
+      <p>Bienvenue <strong>{state.texte} !</strong></p>
+      </div>
+      <div className="cadeau-wish">
       <div className="list__cadeaux">
         <ListCadeaux
           arrayCadeaux={arrayCadeaux}
@@ -18,9 +21,13 @@ export default function Home() {
         />
       </div>
       <div className="wishlist">
-        <WishList arrayCadeaux={arrayCadeaux} />
+        <WishList
+          arrayCadeaux={arrayCadeaux}
+          setArrayCadeaux={setArrayCadeaux}
+        />
       </div>
       <Modal />
+    </div>
     </div>
   );
 }

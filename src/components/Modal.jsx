@@ -1,4 +1,4 @@
-const Modal = ({ isModal }) => {
+const Modal = ({ isModal, handleModal }) => {
   return (
     <div
       className={`containerModal ${
@@ -6,7 +6,7 @@ const Modal = ({ isModal }) => {
       }`}
     >
       <div>
-        <button className="close">close</button>
+        <button className="close" onClick={handleModal} >close</button>
       </div>
     </div>
   );
