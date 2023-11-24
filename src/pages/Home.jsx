@@ -1,11 +1,7 @@
-
-
-// import ListCadeaux from "../components/ListCadeaux";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import ListCadeaux from "../components/ListCadeaux";
 import WishList from "../components/WishList";
-import Modal from "../components/Modal";
 
 
 export default function Home() {
@@ -16,23 +12,24 @@ export default function Home() {
 
     <div className="home">
       <div className="state">
-      <p>Bienvenue <strong>{state.texte} !</strong></p>
+        <p>
+          Bienvenue <strong>{state.texte} !</strong>
+        </p>
       </div>
       <div className="cadeau-wish">
-      <div className="list__cadeaux">
-        <ListCadeaux
-          arrayCadeaux={arrayCadeaux}
-          setArrayCadeaux={setArrayCadeaux}
-        />
+        <div className="list__cadeaux">
+          <ListCadeaux
+            arrayCadeaux={arrayCadeaux}
+            setArrayCadeaux={setArrayCadeaux}
+          />
+        </div>
+        <div className="wishlist">
+          <WishList
+            arrayCadeaux={arrayCadeaux}
+            setArrayCadeaux={setArrayCadeaux}
+          />
+        </div>
       </div>
-      <div className="wishlist">
-        <WishList
-          arrayCadeaux={arrayCadeaux}
-          setArrayCadeaux={setArrayCadeaux}
-        />
-      </div>
-      <Modal />
-    </div>
     </div>
   );
 }
