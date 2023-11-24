@@ -19,9 +19,9 @@ export default function Home() {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-              .changeDelay(50)
+              .changeDelay(100)
               .typeString(
-                state.texte ? ` <strong>${state.texte}</strong><span style="color: #F1F1F1"> !</span>` : 'DEV FRONT-END<span style="color: #F1F1F1"> !</span>'
+                ` <strong>${state.texte}</strong><span style="color: #F1F1F1"> !</span>`
               )
                 .start();
             }}
