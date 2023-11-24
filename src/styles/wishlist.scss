@@ -1,15 +1,39 @@
-.wishlist-container {
+.neige-wish{
+  position: absolute;
+  top : 62px;
+  right: 24px;
+  height: 10%;
+  width: 45%;
+img{
+  width: 98%;
   height: 100%;
+}
+
+
+}
+
+
+.wishlist-container {
+  height: 25%;
   width: 42vw;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd48;
   box-shadow: 0 0 10px rgba(238, 237, 237, 0.1);
   margin: 20px;
   background-color: #fcf8f81a;
   padding: 0 10px;
+
+  .cadeaux{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
 }
 
 .wishlist-container h2 {
-  padding: 10px 5px;
+  padding: 30px 5px;
   display: flex;
   justify-content: center;
   color: #d90416;
@@ -44,6 +68,9 @@
   background-color: #c0392b;
 }
 
+
+
+
 .validButton {
   border-radius: 500px;
   background-color: #c62828;
@@ -58,3 +85,10 @@
     transition: 0.5s; /* Dark Green */
   }
 }
+
+.button-wish{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+
